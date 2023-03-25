@@ -57,7 +57,6 @@ def my_mode(data, col):
                 max_count = counts[value]
     return mode_value
 
-
 def fill_missing(filled_data, missing_cols):
     # Tạo bản sao của DataFrame để tránh thay đổi dữ liệu gốc
     filled_data = filled_data.copy()
@@ -83,11 +82,7 @@ def fill_missing(filled_data, missing_cols):
 # # Deleting rows containing more than a particular number of missing values
 # data.dropna(thresh=len(data.columns)*0.5, axis=0, inplace=True)
 
-# # Deleting columns containing more than a particular number of missing values
-# data.dropna(thresh=len(data.index)*0.5, axis=1, inplace=True)
 
-# # Delete duplicate samples
-# data.drop_duplicates(inplace=True)
 
 
 missing_cols = extract_missing(data)
